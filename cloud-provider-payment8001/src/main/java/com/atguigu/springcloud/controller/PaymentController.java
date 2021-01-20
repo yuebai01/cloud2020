@@ -32,7 +32,7 @@ public class PaymentController {
     @GetMapping(value = "/get/{id}")
     public CommonResult getPaymentById(@PathVariable("id") Long id){
         Payment payment = paymentServer.getPaymentById(id);
-        log.info("查询插入结果"+payment);
+        log.info("查询结果"+payment);
         if (payment!=null){
             return CommonResult.success(payment);
         }else {
