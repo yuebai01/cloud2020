@@ -36,7 +36,7 @@ public class PaymentController {
         if (payment!=null){
             return CommonResult.success(payment);
         }else {
-            return CommonResult.error("未查询到结果，id："+id);
+            return CommonResult.error("没有对应记录，id："+id);
         }
     }
 }
