@@ -20,6 +20,10 @@ public class PaymentController {
 
     @PostMapping(value = "/create")
     public CommonResult create(Payment payment){
+        if (payment==null){
+            return CommonResult.error("插入失败");
+        }
+        log.info("插入的对象"+payment);
         int result = paymentServer.create(payment);
         log.info("插入结果"+result);
         if (result>0){

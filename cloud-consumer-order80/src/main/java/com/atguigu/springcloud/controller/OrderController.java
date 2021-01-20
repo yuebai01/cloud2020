@@ -22,6 +22,7 @@ public class OrderController {
 
     @PostMapping("/payment/create")
     public CommonResult<Payment> create(Payment payment){
+        log.info("要插入的日志"+payment);
         return restTemplate.postForObject(PAYMENT_URL+"/payment/create",payment,CommonResult.class);
     }
 
