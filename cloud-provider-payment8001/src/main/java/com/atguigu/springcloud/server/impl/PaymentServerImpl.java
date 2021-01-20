@@ -6,6 +6,8 @@ import com.atguigu.springcloud.server.PaymentServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * @author:lyf
  * @Date 2021-01-20 11:43

@@ -7,9 +7,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource    #当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver     #mysql驱动包
-    url: jdbc:mysql://39.97.102.8:3306/?useUnicode=true&characterEncoding=utf8&useSSL=true&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&serverTimezone=GMT%2B8
-    data-username: root
-    data-password: Luo1011.
+    url: jdbc:mysql://39.97.102.8:3306/db2019?useUnicode=true&characterEncoding=utf8&useSSL=true&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&serverTimezone=GMT%2B8
+    username: root
+    password: Luo1011.
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
