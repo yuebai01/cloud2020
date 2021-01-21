@@ -19,7 +19,7 @@ public class PaymentController {
     private PaymentServer paymentServer;
 
     @PostMapping(value = "/create")
-    public CommonResult create(Payment payment){
+    public CommonResult create(@RequestBody Payment payment){
         if (payment==null){
             return CommonResult.error("插入失败");
         }
