@@ -25,4 +25,5 @@ public class PaymentServerImpl implements PaymentServer {
     public Payment getPaymentById(Long id) {
         return paymentDao.getPaymentById(id);
     }
+
 }
